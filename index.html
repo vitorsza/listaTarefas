@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- JavaScript -->
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <!-- Container principal -->
+    <div class="container-principal">
+      <!-- Cabeçalho -->
+      <header class="cabecalho">
+        <h1 class="titulo-principal">Lista de Tarefas</h1>
+        <h2 class="subtitulo-principal">
+          Registre suas tarefas! <i class="bi bi-emoji-smile"></i>
+        </h2>
+      </header>
+      <!-- Conteúdo principal -->
+      <main class="conteudo-principal">
+        <form id="form">
+          <div class="box-input">
+            <input
+              type="text"
+              id="inputTarefa"
+              placeholder="Digite uma tarefa..."
+              required
+            />
+            <span id="msgErroInpTarefa"></span>
+          </div>
+          <div class="box-btn-submit">
+            <button type="submit" class="btn-submit">
+              Adicionar <i class="bi bi-plus-circle"></i>
+            </button>
+          </div>
+        </form>
+        <div id="containerTarefas"></div>
+      </main>
+      <!-- Rodapé -->
+      <footer class="rodape">
+        <p class="creditos-dev">
+          Desenvolvido por
+          <a
+            href="https://www.github.com/vitorsza"
+            target="_blank"
+            class="link-creditos"
+            >Vitor Souza</a
+          >
+          &copy; 2024
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
